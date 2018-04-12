@@ -1,0 +1,9 @@
+COMP 103 Assignment 4 
+
+Is the queue fair: 
+
+After running the thread multiple times, The results for the consumer changed significantly which suggests that the queue isn’t fair.
+If the queue of consumers get too far behind producers then the producers are naturally throttled since they have to wait to add more elements.
+
+The general rules for fair queueing is FIFO. There might be someone/something with priority over another, therefore they may need to jump to the front of the queue. For example a medical queue a person having a heart attack will have a higher priority than someone with a broken arm. 
+

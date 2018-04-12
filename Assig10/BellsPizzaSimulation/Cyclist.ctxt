@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=time
+comment0.target=void\ setReturnTime(int)
+comment1.params=
+comment1.target=int\ getReturnTime()
+comment2.params=other
+comment2.target=int\ compareTo(Cyclist)
+numComments=3

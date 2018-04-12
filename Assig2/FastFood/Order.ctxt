@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Order()
+comment1.params=
+comment1.target=void\ orderLength()
+comment2.params=
+comment2.target=void\ levelUp()
+comment3.params=
+comment3.target=boolean\ isReady()
+comment3.text=\ The\ order\ is\ ready\ as\ long\ as\ there\ every\ item\ that\ is\n\ \ wanted\ is\ also\ ready.\n
+comment4.params=item
+comment4.target=boolean\ addItemToOrder(FoodType)
+comment4.text=\ If\ the\ item\ is\ wanted\ but\ not\ already\ in\ the\ order,\n\ \ then\ put\ it\ in\ the\ order\ and\ return\ true,\ to\ say\ it\ was\ successful.\n\ \ If\ the\ item\ not\ wanted,\ or\ is\ already\ in\ the\ order,\n\ \ then\ return\ false\ to\ say\ it\ failed.\n
+comment5.params=
+comment5.target=double\ getPrice()
+comment5.text=\ Computes\ and\ returns\ the\ price\ of\ an\ order.\n\ \ Core\:\ Uses\ constants\:\ 2.50\ for\ fish,\ 1.50\ for\ chips,\ 5.00\ for\ burger\n\ \ to\ add\ up\ the\ prices\ of\ each\ item\n\ \ Completion\:\ Uses\ a\ map\ of\ prices\ to\ look\ up\ prices\n
+comment6.params=y
+comment6.target=void\ draw(int)
+numComments=7

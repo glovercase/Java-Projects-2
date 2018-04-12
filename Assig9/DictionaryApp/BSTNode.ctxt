@@ -1,0 +1,37 @@
+#BlueJ class context
+comment0.params=value
+comment0.target=BSTNode(java.lang.Comparable)
+comment1.params=
+comment1.target=java.lang.Comparable\ getValue()
+comment10.params=
+comment10.target=BSTNode\ getLeftmostNode()
+comment10.text=\n\ \ Returns\ the\ leftmost\ node\ in\ the\ subtree\ formed\ by\ the\ receiver.\ \n\ \ \n\ \ COMPLETION\n\ \ \n\ \ HINT\:\ The\ code\ is\ very\ simple.\ Just\ keep\ descending\ left\ branches,\ \n\ \ until\ it\ is\ no\ longer\ possible.\ \n\ \n\ @returns\ a\ reference\ to\ the\ leftmost\ node,\ starting\ from\ the\ receiver.\ \ \ \ \n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \n
+comment11.params=stream
+comment11.target=void\ printAllToStream(java.io.PrintStream)
+comment11.text=\n\ Prints\ all\ the\ nodes\ in\ a\ subtree\ to\ a\ stream.\n\ \n\ @param\ stream\ -\ the\ output\ stream\ \n
+comment12.params=indent
+comment12.target=void\ printAll(java.lang.String)
+comment12.text=\n\ Prints\ all\ the\ nodes\ in\ a\ subtree\ on\ the\ text\ pane.\n\ \n\ Can\ be\ useful\ for\ debugging\ purposes,\ but\ \n\ is\ most\ useful\ on\ small\ sample\ trees.\ \n\ \n\ Usage\:\ node.printAll("").\n
+comment2.params=
+comment2.target=BSTNode\ getLeft()
+comment3.params=
+comment3.target=BSTNode\ getRight()
+comment4.params=item
+comment4.target=boolean\ contains(java.lang.Comparable)
+comment4.text=\ \n\ Returns\ true\ if\ the\ subtree\ formed\ by\ the\ receiver\ contains\ 'item'\n\ \n\ CORE\n\n\ ASSUMPTION\:\ 'item'\ is\ not\ 'null'.\n\ \n\ HINT\:\ A\ recursive\ approach\ leads\ to\ a\ very\ short\ and\ simple\ code.\ \n\ \n\ HINT\:\ use\ 'compareTo(...)'\ in\ order\ to\ compare\ the\ parameter\ \n\ with\ the\ data\ in\ the\ node.\ \n\ \n\ HINT\:\ Make\ sure\ that\ you\ invoke\ 'compareTo'\ by\ always\ using\n\ the\ same\ receiver\ /\ argument\ ordering\ throughout\ the\ program,\ e.g.,\ \n\ always\ use\ the\ item\ as\ the\ receiver\ of\ 'compareTo'.\n\n@param\ item\ -\ the\ item\ to\ check\ for\n@returns\ true\ if\ the\ subtree\ contained\ 'item'\n\n
+comment5.params=item
+comment5.target=boolean\ add(java.lang.Comparable)
+comment5.text=\n\ Adds\ an\ item\ to\ the\ subtree\ formed\ by\ the\ receiver.\n\ \n\ CORE\n\ \n\ Must\ not\ add\ an\ item,\ if\ it\ is\ already\ in\ the\ tree.\n\ \n\ HINT\:\ use\ 'compareTo(...)'\ in\ order\ to\ compare\ the\ parameter\ \n\ with\ the\ data\ in\ the\ node.\ \n\ \n\ @param\ item\ -\ the\ value\ to\ be\ added\n\ @returns\ false,\ if\ the\ item\ was\ in\ the\ subtree\ already.\ Returns\ true\ otherwise.\n
+comment6.params=
+comment6.target=int\ height()
+comment6.text=\n\ Returns\ the\ height\ of\ the\ receiver\ node.\n\ \n\ CORE\ \n\ \n\ HINT\:\ The\ number\ of\ children\ the\ receiver\ node\ may\ have,\ implies\n\ four\ cases\ to\ deal\ with\ (none,\ left,\ right,\ left\ &\ right).\n\ \n\ @returns\ the\ height\ of\ the\ receiver\n
+comment7.params=
+comment7.target=int\ minDepth()
+comment7.text=\n\ Returns\ the\ length\ of\ the\ shortest\ branch\ in\ the\ subtree\ formed\ by\ the\ receiver.\n\ \n\ COMPLETION\n\ \n\ @returns\ the\ minimum\ of\ all\ branch\ lenghts\ starting\ from\ the\ receiver.\ \n\ \n
+comment8.params=item
+comment8.target=BSTNode\ remove(java.lang.Comparable)
+comment8.text=\ \n\ \ Removes\ an\ item\ in\ the\ subtree\ formed\ by\ the\ receiver.\n\ \ \n\ \ COMPLETION\n\ \ \n\ \ ASSUMPTION\:\ The\ item\ to\ be\ removed\ does\ exist.\ \n\ \ The\ case\ that\ it\ cannot\ be\ found,\ should\ be\ dealt\ with\ before\ this\ method\ is\ called.\n\ \ \n\ \ Performs\ two\ tasks\:\n\ \ 1.\ locates\ the\ node\ to\ be\ removed,\ and\n\ \ 2.\ replaces\ the\ node\ with\ a\ suitable\ node\ from\ its\ subtrees.\n\ \ \n\ \ HINT\:\ use\ 'compareTo(...)'\ in\ order\ to\ compare\ the\ parameter\ \n\ \ with\ the\ data\ in\ the\ node.\ \n\ \n\ \ HINT\:\ For\ task\ 2,\ you\ should\ use\ call\ method\ 'replacementSubtreeFromChildren'\n\ \ to\ obtain\ this\ node.\ \n\ \ \n\ \ HINT\:\ When\ replacing\ a\ node,\ it\ is\ sufficient\ to\ change\ the\ value\ of\ the\ existing\ node\n\ \ with\ the\ value\ of\ the\ node\ that\ conceptually\ replaces\ it.\ There\ is\ no\ need\ to\ actually\ \n\ \ replace\ the\ node\ object\ as\ such.\ \n\ \ \n\ \ @param\ item\ -\ the\ item\ to\ be\ removed\n\ \ @returns\ the\ reference\ to\ the\ subtree\ with\ the\ item\ removed.\n\ \ \n\ \ HINT\:\ Often\ the\ returned\ reference\ will\ be\ the\ receiver\ node,\ but\ it\ is\ possible\ that\n\ \ the\ receiver\ itself\ needs\ to\ be\ removed.\ If\ you\ use\ a\ recursive\ approach,\ the\n\ \ latter\ case\ is\ the\ base\ case.\ \n\ \ \ \n
+comment9.params=left\ right
+comment9.target=BSTNode\ replacementSubtreeFromChildren(BSTNode,\ BSTNode)
+comment9.text=\n\ \ Returns\ a\ replacement\ subtree\ for\ the\ receiver\ node\ (which\ is\ to\ be\ removed).\n\ \ \n\ \ COMPLETION\n\ \ \n\ \ The\ replacement\ subtree\ is\ determined\ from\ the\ children\ of\ the\ node\ to\ be\ removed.\n\ \ \n\ \ HINT\:\ There\ are\ several\ cases\:\n\ \ -\ node\ has\ no\ children\ \ \ \ \=>\ return\ null\n\ \ -\ node\ has\ only\ one\ child\ \=>\ return\ the\ child\n\ \ -\ node\ has\ two\ children\ \ \ \=>\ return\ the\ current\ subtree\ but\ with\n\ \ \ \ \ \ \ a)\ its\ (local)\ root\ replaced\ by\ the\ leftmost\ node\ in\ the\ right\ subtree,\ and\n\ \ \ \ \ \ \ b)\ the\ leftmmost\ node\ in\ the\ right\ subtree\ removed.\n\ \ \ \ \ \ \ \n\ @param\ left\ -\ the\ left\ subtree\ from\ which\ to\ include\ items.\ \ \ \ \ \ \ \n\ @param\ right\ -\ the\ right\ subtree\ from\ which\ to\ include\ items.\ \ \ \ \ \ \ \n\ @returns\ a\ reference\ to\ a\ subtree\ which\ contains\ all\ items\ from\ 'left'\ and\ 'right'\ combined.\ \ \ \ \ \ \n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \n
+numComments=13

@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.params=
+comment0.target=SlideshowApp()
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ SlideshowApp\n\ One\ collection\ of\ images\ is\ shared\ between\ creator\ and\ viewer.\ \n
+comment1.params=
+comment1.target=void\ initialise()
+comment1.text=\n\ Initialises\ the\ UI\ window,\ and\ sets\ up\ the\ buttons.\ \n
+comment2.params=
+comment2.target=void\ showCreatorUI()
+comment2.text=\n\ Activates\ the\ creator\ behaviour\n\ \n\ Note\ the\ switching\ of\ the\ keylistener\n
+comment3.params=
+comment3.target=void\ showViewerUI()
+comment3.text=\n\ Activates\ the\ viewer\ behaviour\n\n\ Note\ the\ switching\ of\ the\ keylistener\n
+comment4.params=name
+comment4.target=void\ buttonPerformed(java.lang.String)
+comment4.text=\n\ This\ method\ is\ called\ when\ a\ button\ that\ this\ object\ is\ listening\ to\ is\ pressed.\n\ \n\ The\ method\ first\ checks\ whether\ a\ slide\ show\ is\ running.\ If\ so,\ all\ input\ is\ ignored.\n\ \n\ Then\ mode\ changes\ are\ checked\ for.\ \n\ \n\ Finally,\ events\ are\ passed\ on\ to\ either\ the\ creator\ or\ viewer\ object,\ whichever\ mode\ the\ application\ is\ in.\ \n\ \n\ @param\ name\ The\ name\ of\ the\ button\ pressed.\n
+comment5.params=args
+comment5.target=void\ main(java.lang.String[])
+numComments=6

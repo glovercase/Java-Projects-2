@@ -1,0 +1,26 @@
+COMP 103 Assignment 4 
+Report on ArraySet testing and benchmarking
+
+Name: Casey Glover
+
+Testing:
+Which test methods succeeded or failed on your implementation of ArraySet:
+
+All of the the tests succeeded. It took time to figure out what to fix. 
+
+
+Benchmarking :
+What were the results of your timing tests?
+(Give the time to load the dictionary and the time to check the story, for both
+ArraySet and HashSet.)
+
+HashSet: time to load dictionary 450 milliseconds.
+
+Time to load the hamlet story 4215 milliseconds. 
+
+ArraySet: time to load dictionary 220223 milliseconds.
+
+Time to load the hamlet story 162032 milliseconds.
+
+The array set is rubbish compared to the hash set.
+

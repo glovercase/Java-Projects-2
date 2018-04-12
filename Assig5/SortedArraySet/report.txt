@@ -1,0 +1,40 @@
+COMP 103 Assignment 5
+Report on SortedArraySet testing and benchmarking
+
+Name: Casey Glover
+
+Testing:
+Which test methods succeeded or failed on your implementation of SortedArraySet:
+ All tests passed but I wasn’t using binary search, and only adding to the end of the array. so therefore it was becoming unsorted. 
+
+Some reason my add method doesn’t work properly 
+
+
+
+
+
+
+Performance Benchmarking:
+What were the results of your timing tests?
+(Give the time to load the dictionary and the time to check the story, for 
+  - SortedArraySet, ArraySet, and HashSet.
+  - dictionaryUnsorted.txt and dictionarySorted.txt 
+
+Sorted ArraySet
+
+Loading took: 0.474 seconds
+Checking took: 15.661 seconds
+
+HashSet 
+
+Loading took: 0.579 seconds
+Checking took: 0.819 seconds
+
+ArraySet took: 
+Loading took: 133.487 seconds
+Checking took: 89 seconds
+
+
+
+
+

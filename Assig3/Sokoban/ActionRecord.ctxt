@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=a\ d
+comment0.target=ActionRecord(java.lang.String,\ java.lang.String)
+comment1.params=
+comment1.target=boolean\ isMove()
+comment2.params=
+comment2.target=boolean\ isPush()
+comment3.params=
+comment3.target=java.lang.String\ dir()
+comment4.params=dir
+comment4.target=java.lang.String\ oppDir(java.lang.String)
+comment5.params=
+comment5.target=java.lang.String\ toString()
+comment5.text=\n\ \ \ \ public\ String\ oppAction(String\ dir){\n\n\ \ \ \ if(isPush()){\n\ \ \ \ kind\ \=\ pull;\n\ \ \ \ }else\ {\n\ \ \ \ //\ Sokoban.isMove(dir);\n\ \ \ \ }\n\ \ \ \ return\ kind;\n\ \ \ \ }\n
+comment6.params=args
+comment6.target=void\ main(java.lang.String[])
+comment6.text=Test\ method
+numComments=7

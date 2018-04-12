@@ -1,0 +1,18 @@
+/* Reflection.txt for COMP103
+ * Name: Casey Glover
+ * Usercode:
+ * ID: 300280613
+ */
+
+For your reflection:
+====================
+
+Write a paragraph that describes an aspect of the material we've covered 
+so far (ie. anything in the first 4 lectures, or this assignment) that 
+you found particularly interesting or tricky to understand. Include how 
+you went about exploring further, learning about the issue to your own 
+satisfaction. If understanding it remains a problem for you, outline 
+what your next step will be in sorting this out.
+--------------------------------------------------------------------
+
+The toughest part of any assignment is figuring out the logic of how the program should work and then finding the best solution for it. This semester I have got my self a big whiteboard and have been drawing the problem out as i am a visual person. My first ideas usually fail but with trial and error reading and researching I eventually figure out the problem. I am still learning to make my code more efficient/simple. My original insert random tile method put the number in order, then it overlapped other numbers, then if the array was full it kept recalling itself as i was using recursion. My code still is perfect as I know there are better ways of achieving the same goal. but happy with my effort. I went to the help desk for the first time and found it very useful being able to talk to the tutor run over my code. Having somebody with knowledge and able to collaborate ideas with them is very helpful. I am excited for further assignments and using the collections class and designing efficient algorithms. So far I am understanding everything that we have learnt in the lectures. I have also been playing around with inheritance and polymorphism making little programs and testing them. I am becoming a very passionate programmer :)

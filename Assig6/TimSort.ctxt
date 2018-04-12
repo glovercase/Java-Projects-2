@@ -1,0 +1,36 @@
+#BlueJ class context
+comment0.params=a\ lo\ hi
+comment0.target=void\ reverseRange(java.lang.Object[],\ int,\ int)
+comment0.text=\n\ Reverse\ the\ specified\ range\ of\ the\ specified\ array.\n\n\ @param\ a\ the\ array\ in\ which\ a\ range\ is\ to\ be\ reversed\n\ @param\ lo\ the\ index\ of\ the\ first\ element\ in\ the\ range\ to\ be\ reversed\n\ @param\ hi\ the\ index\ after\ the\ last\ element\ in\ the\ range\ to\ be\ reversed\n
+comment1.params=n
+comment1.target=int\ minRunLength(int)
+comment1.text=\n\ Returns\ the\ minimum\ acceptable\ run\ length\ for\ an\ array\ of\ the\ specified\n\ length.\ Natural\ runs\ shorter\ than\ this\ will\ be\ extended\ with\n\ {@link\ \#binarySort}.\n\n\ Roughly\ speaking,\ the\ computation\ is\:\n\n\ \ If\ n\ <\ MIN_MERGE,\ return\ n\ (it's\ too\ small\ to\ bother\ with\ fancy\ stuff).\n\ \ Else\ if\ n\ is\ an\ exact\ power\ of\ 2,\ return\ MIN_MERGE/2.\n\ \ Else\ return\ an\ int\ k,\ MIN_MERGE/2\ <\=\ k\ <\=\ MIN_MERGE,\ such\ that\ n/k\n\ \ \ is\ close\ to,\ but\ strictly\ less\ than,\ an\ exact\ power\ of\ 2.\n\n\ For\ the\ rationale,\ see\ listsort.txt.\n\n\ @param\ n\ the\ length\ of\ the\ array\ to\ be\ sorted\n\ @return\ the\ length\ of\ the\ minimum\ run\ to\ be\ merged\n
+comment10.params=args
+comment10.target=void\ main(java.lang.String[])
+comment11.params=obj1\ obj2
+comment11.target=int\ compare(java.lang.Object,\ java.lang.Object)
+comment2.params=runBase\ runLen
+comment2.target=void\ pushRun(int,\ int)
+comment2.text=\n\ Pushes\ the\ specified\ run\ onto\ the\ pending-run\ stack.\n\n\ @param\ runBase\ index\ of\ the\ first\ element\ in\ the\ run\n\ @param\ runLen\ \ the\ number\ of\ elements\ in\ the\ run\n
+comment3.params=
+comment3.target=void\ mergeCollapse()
+comment3.text=\n\ Examines\ the\ stack\ of\ runs\ waiting\ to\ be\ merged\ and\ merges\ adjacent\ runs\n\ until\ the\ stack\ invariants\ are\ reestablished\:\n\n\ \ \ \ \ 1.\ runLen[i\ -\ 3]\ >\ runLen[i\ -\ 2]\ +\ runLen[i\ -\ 1]\n\ \ \ \ \ 2.\ runLen[i\ -\ 2]\ >\ runLen[i\ -\ 1]\n\n\ This\ method\ is\ called\ each\ time\ a\ new\ run\ is\ pushed\ onto\ the\ stack,\n\ so\ the\ invariants\ are\ guaranteed\ to\ hold\ for\ i\ <\ stackSize\ upon\n\ entry\ to\ the\ method.\n
+comment4.params=
+comment4.target=void\ mergeForceCollapse()
+comment4.text=\n\ Merges\ all\ runs\ on\ the\ stack\ until\ only\ one\ remains.\ \ This\ method\ is\n\ called\ once,\ to\ complete\ the\ sort.\n
+comment5.params=i
+comment5.target=void\ mergeAt(int)
+comment5.text=\n\ Merges\ the\ two\ runs\ at\ stack\ indices\ i\ and\ i+1.\ \ Run\ i\ must\ be\n\ the\ penultimate\ or\ antepenultimate\ run\ on\ the\ stack.\ \ In\ other\ words,\n\ i\ must\ be\ equal\ to\ stackSize-2\ or\ stackSize-3.\n\n\ @param\ i\ stack\ index\ of\ the\ first\ of\ the\ two\ runs\ to\ merge\n
+comment6.params=base1\ len1\ base2\ len2
+comment6.target=void\ mergeLo(int,\ int,\ int,\ int)
+comment6.text=\n\ Merges\ two\ adjacent\ runs\ in\ place,\ in\ a\ stable\ fashion.\ \ The\ first\n\ element\ of\ the\ first\ run\ must\ be\ greater\ than\ the\ first\ element\ of\ the\n\ second\ run\ (a[base1]\ >\ a[base2]),\ and\ the\ last\ element\ of\ the\ first\ run\n\ (a[base1\ +\ len1-1])\ must\ be\ greater\ than\ all\ elements\ of\ the\ second\ run.\n\n\ For\ performance,\ this\ method\ should\ be\ called\ only\ when\ len1\ <\=\ len2;\n\ its\ twin,\ mergeHi\ should\ be\ called\ if\ len1\ >\=\ len2.\ \ (Either\ method\n\ may\ be\ called\ if\ len1\ \=\=\ len2.)\n\n\ @param\ base1\ index\ of\ first\ element\ in\ first\ run\ to\ be\ merged\n\ @param\ len1\ \ length\ of\ first\ run\ to\ be\ merged\ (must\ be\ >\ 0)\n\ @param\ base2\ index\ of\ first\ element\ in\ second\ run\ to\ be\ merged\n\ \ \ \ \ \ \ \ (must\ be\ aBase\ +\ aLen)\n\ @param\ len2\ \ length\ of\ second\ run\ to\ be\ merged\ (must\ be\ >\ 0)\n
+comment7.params=base1\ len1\ base2\ len2
+comment7.target=void\ mergeHi(int,\ int,\ int,\ int)
+comment7.text=\n\ Like\ mergeLo,\ except\ that\ this\ method\ should\ be\ called\ only\ if\n\ len1\ >\=\ len2;\ mergeLo\ should\ be\ called\ if\ len1\ <\=\ len2.\ \ (Either\ method\n\ may\ be\ called\ if\ len1\ \=\=\ len2.)\n\n\ @param\ base1\ index\ of\ first\ element\ in\ first\ run\ to\ be\ merged\n\ @param\ len1\ \ length\ of\ first\ run\ to\ be\ merged\ (must\ be\ >\ 0)\n\ @param\ base2\ index\ of\ first\ element\ in\ second\ run\ to\ be\ merged\n\ \ \ \ \ \ \ \ (must\ be\ aBase\ +\ aLen)\n\ @param\ len2\ \ length\ of\ second\ run\ to\ be\ merged\ (must\ be\ >\ 0)\n
+comment8.params=minCapacity
+comment8.target=java.lang.Object[]\ ensureCapacity(int)
+comment8.text=\n\ Ensures\ that\ the\ external\ array\ tmp\ has\ at\ least\ the\ specified\n\ number\ of\ elements,\ increasing\ its\ size\ if\ necessary.\ \ The\ size\n\ increases\ exponentially\ to\ ensure\ amortized\ linear\ time\ complexity.\n\n\ @param\ minCapacity\ the\ minimum\ required\ capacity\ of\ the\ tmp\ array\n\ @return\ tmp,\ whether\ or\ not\ it\ grew\n
+comment9.params=arrayLen\ fromIndex\ toIndex
+comment9.target=void\ rangeCheck(int,\ int,\ int)
+comment9.text=\n\ Checks\ that\ fromIndex\ and\ toIndex\ are\ in\ range,\ and\ throws\ an\n\ appropriate\ exception\ if\ they\ aren't.\n\n\ @param\ arrayLen\ the\ length\ of\ the\ array\n\ @param\ fromIndex\ the\ index\ of\ the\ first\ element\ of\ the\ range\n\ @param\ toIndex\ the\ index\ after\ the\ last\ element\ of\ the\ range\n\ @throws\ IllegalArgumentException\ if\ fromIndex\ >\ toIndex\n\ @throws\ ArrayIndexOutOfBoundsException\ if\ fromIndex\ <\ 0\n\ \ \ \ \ \ \ \ \ or\ toIndex\ >\ arrayLen\n
+numComments=12

@@ -1,0 +1,29 @@
+/* Reflection.txt for COMP103
+ * Name: Casey Glover
+ * Usercode:
+ * ID: 300280613
+ */
+
+For your reflection:
+====================
+
+Firstly, describe how far you got, on this assignment. If there was a problem
+you got stuck on, what was that problem?
+
+I finished the sokoban project, the challenge was tricky for me I tried several options and read up on maze algorithms and went with making a another 2d matrix to check all the squares if it match the selected square. It was really satisfying finally getting it solved! Originally I had my lil man looping in circles it looked cool. 
+I got onto the Molecule renderer challenge and the zoom and tilt work okay but could have been a bit smoother but happy that i have made a decent attempt. It would have helped if i was a math wizard. I ran out of time to attempt the other parts of the molecule challenge. It would be cool to build the entire game :)
+
+Reading and understanding someone else's code is difficult.  What elements of
+Sokoban made it easier or made it  more difficult for you to understand?  Can
+you identify things that you would do or avoid doing if you were trying to make
+your own code easily understood by someone else?
+
+Well commenting always makes peoples code easier to understand. I also changed the squares to an enum class, and refactored some of the code adding in a canMove() method. Setting the direction to a string isn’t the best solution it is easy for the programmer to read but java takes time to read each string, where the directions could be put in an enum and set to int’s which would speed the program up. 
+
+What is the point of comparators?  Why are they necessary in general? Could you
+suggest an alternative way of solving the same problems that didn't involve
+having to make these additional classes?
+
+Well comparators are designed for sorting. They compare an object with another and sort them in order. If the information is in a list you can use the compareTo() method to sort the list. 
+
+--------------------------------------------------------------------

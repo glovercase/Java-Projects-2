@@ -1,0 +1,4 @@
+#BlueJ class context
+comment0.params=indexOne\ indexTwo
+comment0.target=boolean\ compare(int,\ int)
+numComments=1

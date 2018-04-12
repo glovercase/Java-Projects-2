@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ run()
+comment1.params=
+comment1.target=TaxonomyApp()
+comment1.text=\ \n\ Constructs\ a\ new\ TaxonomyApp\ object.\n\ Sets\ up\ the\ GUI\n
+comment2.params=button
+comment2.target=void\ buttonPerformed(java.lang.String)
+comment2.text=Respond\ to\ button\ presses
+comment3.params=arguments
+comment3.target=void\ main(java.lang.String[])
+numComments=4

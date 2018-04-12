@@ -1,0 +1,17 @@
+Student ID: 300280613
+
+MARKER'S GUIDE
+==============
+I attempted / completed the following methods:
+(list one method per line below in the form className.methodName)
+Contains, add, height, count, some of remove
+
+REPORT
+======
+Height of the BST 
+	after loading dictionary.txt: 
+	after removing bad-words.txt:
+
+Minimum of the all the branch lengths in the BST 
+	after loading dictionary.txt: 
+	after removing bad-words.txt:

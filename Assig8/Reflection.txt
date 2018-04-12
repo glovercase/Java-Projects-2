@@ -1,0 +1,22 @@
+/* Reflection.txt for COMP103
+ * Name:Casey Glover
+ * Usercode:
+ * ID:300280613
+ */
+
+For your reflection:
+====================
+
+First, describe how far you got on this assignment. If there was a problem you got stuck on what was that problem?
+I managed to complete this assignment I am really enjoying the problem solving. The hardest method for me to solve was the find ancestors first off I was using recursion but I kept getting a null pointer exception. I then switched to the iterative approach. The contains method also took a wee while to get working but got there in the end. For the challenge the color coding was a neat way to make it look more visually appealing. 
+
+* When you load in the same taxonomy from the file over and over again, you may notice that some times the tree is displayed differently. Why?
+
+This is because the children are put into a hash set which naturally don’t preserve order.  There is no easy way to predict what order the elements will come out. To change the HashSet to a LinkedHashSet would be a good option to have an ordering.
+
+* In the inSubtree(...) method used in the completion, we try to ensure that if a node is moved (along with it's subtree), then it isn't moved into it's own subtree. Discuss two problems that could occur if we allowed a node (along with it's subtree) to become a child of one of the nodes in that subtree.
+
+It could detach from the tree. The children become the parent or the grandparent. Could have memory issues in the program.
+
+
+----------------------------------------------------------------

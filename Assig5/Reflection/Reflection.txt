@@ -1,0 +1,38 @@
+/* Reflection.txt for COMP103
+ * Name: Casey Glover 
+ * Usercode:
+ * ID: 300280613
+ */
+
+For your reflection:
+====================
+
+Firstly, describe how far you got, on this assignment. If there was a problem
+you got stuck on, what was that problem?
+I got stuck with the sorted arraySet and I wasn’t thinking straight about what was required and had to change my code so it used binary search. But I got there in the end. I found the tree recursion quite tricky it doesn’t look the same as the demo but going with a symmetrical looking tree. I really enjoy recursion. 
+
+
+Some of the recursive algorithms in this assignment could have been written
+just as easily using simple loops.
+
+Which recursive methods could have been easily written with loops?
+
+All tail recursion can, The stepping stone.
+
+What are the advantage(s) or disadvantage(s) of using recursive methods 
+rather than loops.
+
+Advantages - easier to read as a programmer , More elegant than a bunch of nested loops
+
+Disadvantage - every time a recursive call is made the stack increases, it could potentially crash the stack if the operation is to large. 
+Why couldn't the others be easily written with loops?
+Because the others are calling the method multiple times to make a change it would be tricky make multiple loops to do the same required work.  
+
+
+Many people find recursion hard to understand at first, although it doesn't do
+anything different from previous programs - it just involves methods which call
+methods.  Why is it tricky?
+
+I guess because the method calls itself, so you might not understand how it increments they may think it is just going to do the same thing over and over. 
+
+--------------------------------------------------------------------

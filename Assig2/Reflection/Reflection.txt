@@ -1,0 +1,31 @@
+/* Reflection.txt for COMP103
+ * Name: Casey Glover
+ * Usercode:
+ * ID: 300280613
+ */
+
+For your reflection:
+====================
+
+Characterise the different collection classes that you have used in this assignment. 
+Map - HashMap - key value pairs
+Queue - arrayQueue - first in first off policy 
+Set - HashSet - a set is like a list but unordered 
+
+Why is the Map different from the other collections? (eg, it isn't even a subtype
+of the Collection type).
+A Map has a key and a value which do not really link with other collections but you can view or access the map using key set that shows a collection. So there is a relationship in similarity.
+
+What is the advantage of declaring a variable to be of type List<Card> but then
+putting a new ArrayList<Card>() into the variable? Why not just declare the
+type to be ArrayList<Card> ?
+My understanding is that When you declare List first the programer then knows it is a list and can call/implement the methods of an the collections class. I think when calling just an array list its is limited.
+
+In FastFood, you needed to iterate down the queue to draw the queue of
+orders. Why is this a violation of the Queue type?  Why do you think Java
+allows you to do it anyway?  What might be a disadvantage of Java allowing you
+to do this?
+
+Queues are designed to only be accessed from the front and added at the back, because the queue implements the collections class it can be iterated through. You don’t want to change the order of a queue unless the item has priority. this is where priority queues come in. 
+
+--------------------------------------------------------------------

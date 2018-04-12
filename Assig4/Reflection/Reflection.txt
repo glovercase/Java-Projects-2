@@ -1,0 +1,31 @@
+/* Reflection.txt for COMP103
+ * Name: Casey Glover
+ * Usercode:
+ * ID: 300280613
+ */
+
+For your reflection:
+====================
+
+Firstly, describe how far you got, on this assignment. If there was a problem
+you got stuck on, what was that problem?
+
+To start with it took a while to understand how the assignment worked. Working slowly through it I have managed to get the core completed. 
+
+
+Java provides several different implementations of the =Set= type, including =HashSet= and
+=TreeSet=.  Why didn't it provide =ArraySet= ?  (After all, it provided the
+=ArrayList= implementation of the =List= type!).
+
+ArraySet extends ArrayList but implements set according to http://docs.oracle.com/cd/E11882_01/olap.112/e10794/oracle/olapi/ArraySet.html
+There is a CopyOnWriteArraySet which is a set that is backed up by an array.
+A set is based on array of elements in no particular order with the time of O(n). So it is not really useful. HashSet or TreeSet would come first pickings before using ArraySet.
+
+
+Coming up with good test methods can be as hard as writing the code that it is
+testing.  Suggest some guidelines or principles for writing good test methods.
+
+Well you need to know what the answer is going to be so you test the program to see if it returns that answer. Also you need to give the programs tests to see if it breaks. Because if you program is released you want your program to be robust. This is my first time ever testing so I am still new to the idea of what is required. I have enjoyed the learning curve of this assignment.  
+
+
+--------------------------------------------------------------------

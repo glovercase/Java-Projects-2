@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=SpellingChecker()
+comment1.params=button
+comment1.target=void\ buttonPerformed(java.lang.String)
+comment2.params=
+comment2.target=void\ getTextHashSet()
+comment3.params=
+comment3.target=void\ getTextArraySet()
+comment4.params=
+comment4.target=void\ runHashSet()
+comment5.params=
+comment5.target=void\ runArraySet()
+comment6.params=args
+comment6.target=void\ main(java.lang.String[])
+numComments=7

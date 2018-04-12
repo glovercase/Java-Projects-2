@@ -1,0 +1,41 @@
+/* Reflection.txt for COMP103
+ * Name: Casey Glover
+ * Usercode:
+ * ID: 300280613
+ */
+
+For your reflection:
+====================
+
+First, describe how far you got on this assignment. If there was a problem
+you got stuck on, what was that problem?
+
+I have done reasonably well, I have gotten stuck on the recursion methods :( my count wasn’t working properly but I managed to fix it. So now all my methods work properly. I chose to change the recursive reverse to just use one method. Because it makes more sense to me to just use one method.
+
+I was happy that I got the reverse method for iterator.
+
+* Do you think that having both classes "Images" and "ImageNode" is overkill? 
+  What pros and cons can you think of in comparison to just using ImageNode?
+
+It was definitely helpful having the two classes but in some cases the one method could have done the job. for example my add before method doesn’t call insert before. 
+
+The recursive reverse only needed the one method i believe. I didn’t need to use the image node method
+
+* Did you notice the different complexity of adding an image
+  before vs after the cursor? 
+  What are the complexities and what is the cause of this complexity difference? 
+
+Adding after was very easy because you knew what the node was.
+Where the before node you had to iterate through the list to find the node before.
+
+* Can you think of an extension to "ImageNode" that would avoid the 
+  above mentioned complexity difference? 
+
+Well you could have a doubly linked list so the node remembers the previous node and the next node
+
+* Cursors are a good way of obtaining quick access to a certain point in a list. 
+  Can you think of a potential problem if a client does not use Images.setCursor correctly?
+
+The cursor could be in the wrong position and so then add an item would then be put in the wrong place. or it could break the link list and lose the next nodes. The head is overwritten possibly. 
+ 
+----------------------------------------------------------------

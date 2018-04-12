@@ -1,0 +1,25 @@
+/* Reflection.txt for COMP103
+ * Name: Casey Glover
+ * Usercode:
+ * ID: 300280613
+ */
+
+For your reflection:
+====================
+
+Firstly, describe how far you got, on this assignment. If there was a problem
+you got stuck on, what was that problem?
+
+With the core I hand the < and > the wrong way round for a while in the sink down and bubble up methods. Also the first time implementing the method I used an iterate approach but decided to switch to a recursive approach which made my code a lot more simplified.
+It took me a long to figure out the best way to approach the cyclists problem and realised the best option was to make the cyclist a object like the pizza and put them in a queue the only difference was to set as a min heap instead of max heap. 
+
+I got up to the Challenge but I unfortunately ran out of time. 
+
+
+This was the last assignment for COMP103. Think back to the beginning of the course and what you knew at that point, and then list some of the insights and knowledge you gained during this course.
+
+I have learnt a lot this semester and have really enjoyed the course. My tutor Tony is excellent and the guys on the help desk really helped me understand the ideas of certain assignments. I have tried to attempt the challenges every week and have gained some amazing marks. Setting myself with high goals I have stepped up and achieved them. My understanding of recursion BST trees, linked lists, queues, stacks and the sorting algorithms is in depth. I need to practice writing my owns tests to getter a better understanding.
+
+Which insights and new knowledge do you regard as valuable and why? 
+I feel learning about enums and recursion where the best part of the course because it made a big change in the the program was built. Having knowledge of the sorts and collections is also been valuable to build on my knowledge of programming.
+--------------------------------------------------------------------

@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.params=
+comment0.target=MoleculeRenderer()
+comment0.text=\ Set\ up\ the\ Graphical\ User\ Interface\ and\ read\ the\ file\ of\ element\ data\ of\n\teach\ possible\ type\ of\ atom\ into\ a\ Map\:\ where\ the\ type\ is\ the\ key\n\ \ and\ an\ ElementInfo\ object\ is\ the\ value\ (containing\ size\ and\ color).\n
+comment1.params=button
+comment1.target=void\ buttonPerformed(java.lang.String)
+comment1.text=\ Respond\ to\ button\ presses.\n\ \ Most\ of\ the\ presses\ will\ set\ the\ currentAngle\ and\ sort\ the\ list\ of\ molecules\n\ \ using\ the\ appropriate\ comparator\n
+comment2.params=slider\ z
+comment2.target=void\ sliderPerformed(java.lang.String,\ double)
+comment3.params=fname
+comment3.target=void\ readMoleculeFile(java.lang.String)
+comment3.text=\ Reads\ the\ molecule\ data\ from\ a\ file\ containing\ one\ line\ for\ each\ atom\ in\n\ \ the\ molecule.\n\ \ Each\ line\ contains\ an\ atom\ type\ and\ the\ 3D\ coordinates\ of\ the\ atom.\n\ \ For\ each\ atom,\ it\ constructs\ an\ Atom\ object,\n\ \ \ and\ adds\ it\ to\ the\ List\ of\ Atoms\ in\ the\ molecule.\n\ \ To\ get\ the\ color\ and\ the\ size\ of\ each\ atom,\ it\ has\ to\ look\ up\ the\ type\n\ \ \ of\ the\ atom\ in\ the\ Map\ of\ elements.\n
+comment4.params=
+comment4.target=void\ readElementTable()
+comment4.text=\ (Completion)\ Reads\ a\ file\ containing\ radius\ and\ color\ information\ about\ each\ type\ of\n\tatom\ and\ stores\ the\ info\ in\ a\ Map,\ using\ the\ atom\ type\ as\ a\ key\n
+comment5.params=zoom
+comment5.target=void\ render(double)
+comment5.text=\ Render\ the\ molecule,\ according\ the\ the\ current\ ordering\ of\ Atoms\ in\ the\ List.\n\ \ The\ Atom's\ render()\ method\ needs\ the\ current\ perspective\ angle\ \n
+comment6.params=args
+comment6.target=void\ main(java.lang.String[])
+numComments=7

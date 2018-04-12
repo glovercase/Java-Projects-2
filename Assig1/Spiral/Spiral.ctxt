@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Spiral()
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Spiral\n
+comment1.params=button
+comment1.target=void\ buttonPerformed(java.lang.String)
+comment1.text=\n\n
+comment2.params=
+comment2.target=void\ line()
+comment3.params=
+comment3.target=void\ square()
+comment4.params=
+comment4.target=void\ spiral()
+numComments=5

@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=int\ size()
+comment1.params=
+comment1.target=boolean\ isEmpty()
+comment2.params=node1\ node2
+comment2.target=boolean\ compare(HeapLinkedNode,\ HeapLinkedNode)
+comment3.params=node1\ node2
+comment3.target=void\ swap(HeapLinkedNode,\ HeapLinkedNode)
+comment4.params=node
+comment4.target=void\ sinkDownFromIndex(HeapLinkedNode)
+comment5.params=node
+comment5.target=void\ bubbleUpFromIndex(HeapLinkedNode)
+numComments=6

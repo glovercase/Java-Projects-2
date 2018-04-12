@@ -1,0 +1,23 @@
+/* Reflection.txt for COMP103
+ * Name:Casey Glover
+ * Usercode:
+ * ID:300280613
+ */
+
+For your reflection:
+====================
+
+First, describe how far you got on this assignment. If there was a problem you got stuck on what was that problem?
+
+This week I struggled to have the time for this assignment as I had a trip to Australia for a wedding. So I didn’t get as far through as I would hope. At the end of the day my time management was the problem. Will redeem myself for the last assignment. 
+
+* Did you notice a difference in speed of the application compared to the one of assignment 4? Where does the speed difference come from?
+With a binary search tree it as a speed of O(n log n) it is able to search a lot quicker than a array set.
+
+* What did you observe comparing the height of the tree, both after loading the dictionary words and after removing the bad words? How do you explain this result? 
+I didn’t get up to the remove section :(
+
+* What is the numerical difference between the height of the tree you observed and the theoretical minimum? State the number and briefly comment on how much it affects the search speed.
+
+----------------------------------------------------------------
+

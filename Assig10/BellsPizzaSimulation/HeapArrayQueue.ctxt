@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=
+comment0.target=int\ size()
+comment1.params=
+comment1.target=boolean\ isEmpty()
+comment2.params=indexOne\ indexTwo
+comment2.target=boolean\ compare(int,\ int)
+comment3.params=nodeIndex
+comment3.target=void\ sinkDownFromIndex(int)
+comment4.params=nodeIndex
+comment4.target=void\ bubbleUpFromIndex(int)
+comment5.params=from\ to
+comment5.target=void\ swap(int,\ int)
+comment5.text=\n\ Swaps\ two\ elements\ in\ the\ supporting\ array.\n
+comment6.params=
+comment6.target=void\ ensureCapacity()
+comment6.text=\n\ \ Increases\ the\ size\ of\ the\ supporting\ array,\ if\ necessary\n
+numComments=7
